@@ -1,0 +1,22 @@
+body { font-family: 'Lato', 'Segoe UI', Arial, sans-serif; background: #f7fafc; }
+.card { border-radius: 18px; }
+input[type="file"] { background-color: #f7fafd; }
+.alert-green { background: #dcffe4!important; color: #1e7a32; }
+.alert-yellow { background: #fff8dc!important; color: #b97905; }
+.alert-red { background: #ffeaea!important; color: #a90000; }
+img.rounded { border-radius: 12px; border: 2px solid #ebf0fa; }
+hr { margin-top: 2em; }
+
+.container {
+    margin: 50px auto;
+    max-width: 500px;
+    padding: 30px;
+    background: #fff;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.12);
+    border-radius: 8px;
+    text-align: center;
+}
+.result.green { background: #dcffe4; color: #056a15; font-weight: bold; }
+.result.yellow { background: #fffbe5; color: #b97905; font-weight: bold; }
+.result.red { background: #ffeaea; color: #a90000; font-weight: bold; }
+button { margin-top: 18px; background: #2874f0; color: #fff; border: none; padding: 10px 30px; border-radius: 4px; cursor: pointer; }
