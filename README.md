@@ -12,26 +12,35 @@ You can upload a chest X-ray (JPEG/PNG), and the app returns the predicted statu
 
 📁 Repository Structure
 chestxray-app/
-│
-├── app.py                      # Main Flask application
-├── requirements.txt            # Project dependencies
-├── README.md                   # Project documentation (this file)
-│
-├── model/
-│   └── best_inceptionv3_model.keras    # Trained Keras model file
-│
-├── static/
-│   ├── css/
-│   │   └── styles.css           # Custom styles
-│   ├── images/
-│   │   └── favicon.png          # (optional) Project icon
-│   └── uploads/                 # Uploaded X-rays (auto-created if not present)
-│
-├── templates/
-│   └── index.html               # Web interface template
-│
-├── utils/
-│   └── preprocessing.py         # Image preprocessing function
+
+file 1 : app.py            # Main Flask application
+
+file 2 : requirements.txt  # Project dependencies
+
+file 3 : README.md         # Project documentation (this file)
+
+Folder 1 : model
+i) Filer 1.1 : best_inceptionv3_model.keras  # Trained Keras model file
+
+Folder 2 : static
+
+I) Folder 2.1 : css
+i) File 2.1.1 : style.css  # Custom styles.
+
+II) Folder 2.2 : images 
+i) image : favicon.png  # (optional) Project icon.
+
+III) Folder 2.3 : uploads
+i)  # Uploaded X-rays (auto-created if not present).
+
+Folder 3 : templates
+
+i) File 3.1 : index.html    # Web interface template.
+ii) File 3.2 : result.html
+
+Folder 4 : utils
+
+i) File 4.1 : prepocessing.py  # Image preprocessing function
 
 
 In order to obtain the model, You need to run the model1.py program.
