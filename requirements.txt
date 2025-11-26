@@ -7,3 +7,4 @@ werkzeug
 scikit-learn
 matplotlib
 requests
+utils
