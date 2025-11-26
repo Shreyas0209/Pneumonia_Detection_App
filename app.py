@@ -9,7 +9,23 @@ app = Flask(__name__)
 app.config['UPLOAD_FOLDER'] = 'static/uploads'
 os.makedirs(app.config['UPLOAD_FOLDER'], exist_ok=True)
 
-MODEL_PATH = 'model/best_inceptionv3_model.keras'
+MODEL_URL = "https://drive.google.com/uc?export=download&id=1ZdOldz7646NP8bLbdQ5gdcVbIVmmuVZ9"
+MODEL_PATH = "best_model2.keras"
+
+def download_model():
+    import os
+    import requests
+    if not os.path.exists(MODEL_PATH):
+        print("Downloading model...")
+        response = requests.get(MODEL_URL, stream=True)
+        with open(MODEL_PATH, "wb") as f:
+            for chunk in response.iter_content(chunk_size=8192):
+                if chunk:
+                    f.write(chunk)
+        print("Model downloaded successfully.")
+
+download_model()
+
 model = load_model(MODEL_PATH)
 
 def assign_tier(prob):
@@ -47,3 +63,4 @@ def display_image(filename):
 
 if __name__ == '__main__':
     app.run(debug=True)
+
